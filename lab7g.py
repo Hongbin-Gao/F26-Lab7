@@ -36,7 +36,6 @@ def get_decade(year):
     return (year // 10 * 10)
 
 df['decade'] = get_decade(df['Year'])
-print(df)
 
 decade_rating = df.groupby('decade')['IMDB rating'].mean()
 best_decade = decade_rating.idxmax()

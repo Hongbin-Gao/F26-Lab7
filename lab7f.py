@@ -30,10 +30,26 @@ data = {
 }
 }
 
-# TO DO 2: create a data frame provided in dataframe.jpg file.
-
 frame = pd.DataFrame(data)
 print('Combined dataframe:\n', frame)
+
+# TO DO 2: create a data frame provided in dataframe.jpg file.
+
+print('\n')
+
+data = {
+
+    'student_name': ['A', 'B', 'C', 'D'],
+    'student_marks': [22, 344, 55, 77]
+}
+
+df2 = pd.DataFrame(
+    data,
+    index=['Maths', 'English', 'Urdu', 'Science']
+)
+
+print(df2)
+
 
 # TO DO 3: Run the script.
 

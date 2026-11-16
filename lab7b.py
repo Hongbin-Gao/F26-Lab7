@@ -39,17 +39,17 @@ array4 = np.array([
 array1 = np.reshape(array1,(5,6))
 array2 = np.reshape(array2,(2,3,5))
 print(array1)
-print(array2)
+print(array2,'\n')
 
 # TO DO 3: Create array5 according to instructions given in readme.md file.
 
 array5 = np.diag([45, 7, 61, 8, 9])
-print(array5)
+print(array5,'\n')
 
 # TO DO 4: Create array6 according to instructions given in readme.md file.
 
 array6 = np.random.normal(size=(7,7))
-print(array6)
+print(array6,'\n')
 
 # TO DO 5: Run the script.
 

@@ -7,22 +7,19 @@
 # Usage: ./lab7h.py
 
 # TO DO 1: Import pandas and matplotlib modules.
-
 import pandas as pd
 import matplotlib.pyplot as plt
-
 # TO DO 2: Draw histogram of the data from movies database.
 
 url = "https://raw.githubusercontent.com/itiievskyi/IMDB-Top-250/master/imdb_top_250.csv"
 df = pd.read_csv(url)
-
 # TO DO 3: Perform the operations provided in readme.md file on this data.
 
 years = df["Year"].copy()
-print(years)
+print(years, '\n')
 
 years = years.sort_values()
-print(years)
+print(years, '\n')
 
 year_counts = years.value_counts().sort_index()
 print(year_counts)
@@ -32,5 +29,4 @@ plt.bar(
     year_counts.head(10).values
 )
 plt.show()
-
 # TO DO 4: Run the script.
