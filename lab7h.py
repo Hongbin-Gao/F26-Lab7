@@ -18,5 +18,19 @@ df = pd.read_csv(url)
 
 # TO DO 3: Perform the operations provided in readme.md file on this data.
 
-# TO DO 4: Run the script.
+years = df["Year"].copy()
+print(years)
 
+years = years.sort_values()
+print(years)
+
+year_counts = years.value_counts().sort_index()
+print(year_counts)
+
+plt.bar(
+    year_counts.head(10).index.astype(str),
+    year_counts.head(10).values
+)
+plt.show()
+
+# TO DO 4: Run the script.
